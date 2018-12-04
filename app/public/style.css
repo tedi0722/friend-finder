@@ -1,0 +1,22 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h4 {
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+h3 {
+    padding-top: 25px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#submit {
+    margin: 45px 0 16px;
+}
+
+footer {
+    margin: 20px 0;
+}
