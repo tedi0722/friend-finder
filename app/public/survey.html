@@ -176,8 +176,9 @@
 
 <script>
     $("#submit").on("click", function () {
-        function validation() {
+        function validation () {
             var isValid = true;
+            // validation to make sure fields are filled
             $("#name").each(function () {
                 if ($(this).val() === '')
                     isValid = false;
@@ -220,6 +221,7 @@
                 $("#resultModal").modal('toggle');
             });
 
+// clear all fields
             $('#name').val("");
             $('#photo').val("");
             $('#q1').val("");

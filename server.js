@@ -5,6 +5,7 @@ var bodyParser = require("body-parser");
 var app = express ();
 var PORT = process.env.PORT || 3000; 
 
+// static for css file
 app.use(express.static(path.join(__dirname, './app/public')));
 
 app.use(bodyParser.json());

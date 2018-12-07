@@ -17,6 +17,15 @@ h3 {
     margin: 45px 0 16px;
 }
 
+#submit:hover {
+    background: #87ceeb;
+}
+
+#goToSurvey:hover {
+    background: #87ceeb;
+}
+
 footer {
     margin: 20px 0;
 }
+

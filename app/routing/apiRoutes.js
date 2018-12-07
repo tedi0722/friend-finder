@@ -1,15 +1,18 @@
 var friends = require("../data/friends");
 
 module.exports = function (app) {
+
+    // get method
     app.get("/api/friends", function (req, res) {
         res.json(friends);
     });
 
+    // post method (include math logic)
     app.post("/api/friends", function (req, res) {
         var bestMatch = {
             name: "",
             photo: "",
-            friendDifference: 1000
+            difference: 100
         }
         var userData = req.body;
         var userName = userData.name;
@@ -20,22 +23,24 @@ module.exports = function (app) {
 
         for (var i = 0; i < friends.length; i++) {
 
-            console.log(friends[i].name);
             totalDifference = 0;
 
             for (var j = 0; j < friends[i].scores[j]; j++) {
 
                 totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
 
-                if (totalDifference <= bestMatch.friendDifference) {
-
+                // update every iteration with the match that has the lowest minimum
+                if (totalDifference < bestMatch.difference) {
+                    
                     bestMatch.name = friends[i].name;
                     bestMatch.photo = friends[i].photo;
-                    bestMatch.friendDifference = totalDifference;
+                    bestMatch.difference = totalDifference;
+                    
                 }
             }
         }
 
+        // adds new data to friends array on submit
         friends.push(userData);
 
         res.json(bestMatch);
