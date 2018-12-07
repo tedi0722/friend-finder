@@ -1,5 +1,4 @@
-var friends = [
-    {
+var friends = [{
         "name": "Ross",
         "photo": "https://pixel.nymag.com/imgs/fashion/daily/2018/10/24/24-ross-friends.w700.h700.jpg",
         "scores": [
@@ -14,7 +13,7 @@ var friends = [
             "3",
             "4"
         ]
-    }, 
+    },
     {
         "name": "Joey",
         "photo": "https://rockntech.com.br/wp-content/uploads/2016/03/curiosidades-sobre-friends_2.jpg",
@@ -30,7 +29,7 @@ var friends = [
             "4",
             "3"
         ]
-    }, 
+    },
     {
         "name": "Chandler",
         "photo": "https://i.pinimg.com/originals/2a/30/58/2a305844cb932d6d9b57722d1272efe4.jpg",
@@ -46,7 +45,7 @@ var friends = [
             "3",
             "3"
         ]
-    }, 
+    },
     {
         "name": "Rachel",
         "photo": "https://pixel.nymag.com/imgs/daily/vulture/2014/12/17/17-rachel-green-jewish.w700.h700.jpg",
@@ -62,7 +61,7 @@ var friends = [
             "5",
             "1"
         ]
-    }, 
+    },
     {
         "name": "Monica",
         "photo": "https://image.afcdn.com/story/20140225/monica-gellar-184341_w767h767c1cx345cy200.jpg",
@@ -78,7 +77,7 @@ var friends = [
             "2",
             "4"
         ]
-    }, 
+    },
     {
         "name": "Phoebe",
         "photo": "https://amp.businessinsider.com/images/55df18389dd7cc0f008b64cc-750-563.jpg",
@@ -94,7 +93,7 @@ var friends = [
             "5",
             "2"
         ]
-    }, 
+    },
 ]
 
 module.exports = friends;
