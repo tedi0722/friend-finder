@@ -1,5 +1,14 @@
 # Friend Finder
 
+### Overview
+The Friend Finder app allows users to take a survey and match with an existing user that is stored in database. New users' information will be stored upon submit. 
+
+### Installation
+To install the application, follow the instructions below:
+```git clone https://github.com/tedi0722/friend-finder.git
+cd friend-finder/
+npm install```
+
 ### Technologies
 * HTML
 * CSS
